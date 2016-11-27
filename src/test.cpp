@@ -4,9 +4,14 @@
 
 int main(int argc, char** argv){
 
+  if(argc < 2){
+    std::cout << "Usage: test \"PROGRAM\" "<< std::endl;
+    return 0;
+  }
+
   Interpreter i;
 
-  double x = i.parse("3 4 add 2 mul");
+  double x = i.parse(argv[1]);
 
   std::cout << x << std::endl;
 
