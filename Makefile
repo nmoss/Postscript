@@ -1,3 +1,3 @@
 
 compile:
-	g++ -Wall -o bin/test src/*.cpp
+	g++ -Wall -g -o bin/test src/*.cpp
