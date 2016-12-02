@@ -8,6 +8,6 @@ class Numerical: public Element {
   Element * operator-(const Element& e) const;
   Element * operator*(const Element& e) const;
   Element * operator/(const Element& e) const;
-  //~Numerical(){};
+  ~Numerical();
 };
 #endif

@@ -3,6 +3,11 @@
 
 Numerical::Numerical(double n){
   value = n;
+  std::cout << "Making a Numerical object..." << std::endl;
+}
+
+Numerical::~Numerical(){
+  std::cout << "Deleting a Numerical object..." << std::endl;
 }
 
 Element* Numerical::operator+(const Element& e) const {
