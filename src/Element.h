@@ -11,7 +11,7 @@ class Element {
   virtual Element * operator-(const Element& e) const =0;
   virtual Element * operator*(const Element& e) const =0;
   virtual Element * operator/(const Element& e) const =0;
-  //~Element()= default;
+  virtual ~Element()=0;
 };
 
 #endif // __ELEMENT_H_INCLUDED

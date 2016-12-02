@@ -31,8 +31,8 @@ double Interpreter::parse(std::string expression){
         Element * e2 = element_stack.top();
         element_stack.pop();
         Element * e3 = *e1 - *e2;
-        delete e1;
-        delete e2;
+        //delete e1;
+        //delete e2;
         element_stack.push(e3);
         std::cout << current << std::endl;
       }
@@ -43,8 +43,8 @@ double Interpreter::parse(std::string expression){
         Element * e2 = element_stack.top();
         element_stack.pop();
         Element * e3 = *e1 * *e2;
-        delete e1;
-        delete e2;
+        //delete e1;
+        //delete e2;
         element_stack.push(e3);
         std::cout << current << std::endl;
       }
@@ -57,8 +57,8 @@ double Interpreter::parse(std::string expression){
         Element * e3 = *e1 / *e2;
         element_stack.push(e3);
 
-        delete e1;
-        delete e2;
+        //delete e1;
+        //delete e2;
         std::cout << current << std::endl;
       }
       else {

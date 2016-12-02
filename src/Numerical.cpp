@@ -7,7 +7,7 @@ Numerical::Numerical(double n){
 }
 
 Numerical::~Numerical(){
-  std::cout << "Deleting a Numerical object..." << std::endl;
+  //std::cout << "Deleting a Numerical object..." << std::endl;
 }
 
 Element* Numerical::operator+(const Element& e) const {
