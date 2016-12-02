@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include "Element.h"
 #include "Numerical.h"
+#include "Boolean.h"
 
 class Interpreter {
   std::stack<Element*> element_stack;
