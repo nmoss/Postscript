@@ -5,9 +5,10 @@
 #include <string>
 #include <cstdlib>
 #include "Element.h"
+#include "Numerical.h"
 
 class Interpreter {
-  std::stack<Element> element_stack;
+  std::stack<Element*> element_stack;
  public:
   double parse(std::string expression);
 };
